@@ -1,6 +1,6 @@
 <?php
 
-namespace Lookitsatravis\Listify\Commands;
+namespace Lookitsatravis\Listify\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
