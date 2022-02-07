@@ -216,7 +216,6 @@ trait Listify
         }
 
         $this->getConnection()->transaction(function () {
-            $this->lowerItem()->decrement($this->getPositionColumnName());
             $this->increment($this->getPositionColumnName());
         });
 
@@ -235,7 +234,6 @@ trait Listify
         }
 
         $this->getConnection()->transaction(function () {
-            $this->higherItem()->increment($this->getPositionColumnName());
             $this->decrement($this->getPositionColumnName());
         });
 
