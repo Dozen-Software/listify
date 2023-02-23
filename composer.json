@@ -1,6 +1,6 @@
 {
-    "name": "lookitsatravis/listify",
-    "description": "Turn any Eloquent model into a list! http://lookitsatravis.github.io/listify",
+    "name": "dozen-software/listify",
+    "description": "Turn any Eloquent model into a list! https://github.com/Dozen-Software/listify",
     "keywords": ["laravel", "model", "position", "acts_as_list", "rails", "list", "eloquent", "order"],
     "license": "MIT",
     "authors": [{
@@ -9,24 +9,33 @@
         "homepage": "http://lookitsatravis.com"
     }],
     "require": {
-        "php": ">=5.5.0",
-        "illuminate/database": "~5.0",
-        "illuminate/support": "~5.0",
-        "illuminate/console": "~5.0",
-        "illuminate/events": "~5.0"
+        "php": ">=8.0.2",
+        "illuminate/database": "~5.5|~6.0|~7.0|~8.0|~9.0",
+        "illuminate/support": "~5.5|~6.0|~7.0|~8.0|~9.0",
+        "illuminate/console": "~5.5|~6.0|~7.0|~8.0|~9.0",
+        "illuminate/events": "~5.5|~6.0|~7.0|~8.0|~9.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.0",
-        "satooshi/php-coveralls": "dev-master",
-        "way/phpunit-wrappers": "dev-master"
+        "phpunit/phpunit": "~9.5",
+        "php-coveralls/php-coveralls": "^2.5"
     },
     "autoload": {
-        "psr-0": {
-            "Lookitsatravis\\Listify": "src/"
+        "psr-4": {
+            "dozen-software\\Listify\\": "src/"
         }
     },
     "autoload-dev": {
         "classmap": ["tests/models"]
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev",
+    "config": {
+        "discard-changes": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lookitsatravis\\Listify\\ListifyServiceProvider"
+            ]
+        }
+    }
 }
