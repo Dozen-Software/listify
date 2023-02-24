@@ -1,5 +1,5 @@
 {
-    "name": "dozen-software/listify",
+    "name": "dozen/listify",
     "description": "Turn any Eloquent model into a list! https://github.com/Dozen-Software/listify",
     "keywords": ["laravel", "model", "position", "acts_as_list", "rails", "list", "eloquent", "order"],
     "license": "MIT",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dozen-software\\Listify\\": "src/"
+            "Dozen\\Listify\\": "src/"
         }
     },
     "autoload-dev": {
