@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class FooWithStringScopeB extends Eloquent
 {
-    use \Lookitsatravis\Listify\Listify;
+    use \Dozen\Listify\Listify;
 
     protected $table ="foo_with_string_scopes";
 

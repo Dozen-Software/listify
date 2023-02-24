@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model as Eloquent;
 
 class Foo extends Eloquent
 {
-    use \Lookitsatravis\Listify\Listify;
+    use \Dozen\Listify\Listify;
 
     /**
      * The fillable array lets laravel know which fields are fillable

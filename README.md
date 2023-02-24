@@ -31,25 +31,25 @@ Turn any Eloquent model into a list!
 ## Installation
 `Listify` is distributed as a composer package, which is how it should be used in your app.
 
-Install the package using Composer.  Edit your project's `composer.json` file to require `lookitsatravis/listify`.
+Install the package using Composer.  Edit your project's `composer.json` file to require `Dozen/listify`.
 
 ```js
   "require": {
     "laravel/framework": "~5.0",
-    "lookitsatravis/listify": "~1.2"
+    "Dozen/listify": "~1.2"
   }
 ```
 
 Once this operation completes, the final step is to add the service provider. Open `app/config/app.php`, and add a new item to the providers array.
 
 ```php
-    'Lookitsatravis\Listify\ListifyServiceProvider'
+    'Dozen\Listify\ListifyServiceProvider'
 ```
 
 Optionally, you can define an alias to the `Listify` trait. Open `app/config/app.php`, and add a new item to the aliases array.
 
 ```php
-    'Listify' => 'Lookitsatravis\Listify\Listify'
+    'Listify' => 'Dozen\Listify\Listify'
 ```
 
 ## Quickstart
@@ -68,7 +68,7 @@ Then, in your model:
 ```php
 class User extends Eloquent
 {
-    use \Lookitsatravis\Listify\Listify;
+    use \Dozen\Listify\Listify;
 
     public function __construct(array $attributes = array(), $exists = false) {
 
@@ -141,7 +141,7 @@ Example:
 ```php
 class User extends Eloquent
 {
-    use \Lookitsatravis\Listify\Listify;
+    use \Dozen\Listify\Listify;
 
     public function __construct(array $attributes = array(), $exists = false) {
 
@@ -169,7 +169,7 @@ Example:
 ```php
 class ToDoListItem extends Eloquent
 {
-    use \Lookitsatravis\Listify\Listify;
+    use \Dozen\Listify\Listify;
 
     public function __construct(array $attributes = array(), $exists = false) {
 
@@ -204,7 +204,7 @@ Example:
 ```php
 class ToDoListItem extends Eloquent
 {
-    use \Lookitsatravis\Listify\Listify;
+    use \Dozen\Listify\Listify;
 
     public function __construct(array $attributes = array(), $exists = false) {
 

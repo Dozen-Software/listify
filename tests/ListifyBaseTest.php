@@ -511,7 +511,7 @@ class ListifyBaseTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException \Lookitsatravis\Listify\Exceptions\InvalidScopeException
+     * @expectedException \Dozen\Listify\Exceptions\InvalidScopeException
      */
     public function test_invalidScopeExceptionNonObject()
     {
@@ -523,7 +523,7 @@ class ListifyBaseTest extends \PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @expectedException \Lookitsatravis\Listify\Exceptions\InvalidScopeException
+     * @expectedException \Dozen\Listify\Exceptions\InvalidScopeException
      */
     public function test_invalidScopeExceptionObject()
     {

@@ -1,4 +1,4 @@
-<?php namespace Lookitsatravis\Listify\Commands;
+<?php namespace Dozen\Listify\Commands;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;

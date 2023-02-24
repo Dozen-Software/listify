@@ -1,11 +1,11 @@
-<?php namespace Lookitsatravis\Listify;
+<?php namespace Dozen\Listify;
 
 use DB, Event, Config, App;
-use Lookitsatravis\Listify\Exceptions\ListifyException;
-use Lookitsatravis\Listify\Exceptions\NullForeignKeyException;
-use Lookitsatravis\Listify\Exceptions\NullScopeException;
-use Lookitsatravis\Listify\Exceptions\InvalidScopeException;
-use Lookitsatravis\Listify\Exceptions\InvalidQueryBuilderException;
+use Dozen\Listify\Exceptions\ListifyException;
+use Dozen\Listify\Exceptions\NullForeignKeyException;
+use Dozen\Listify\Exceptions\NullScopeException;
+use Dozen\Listify\Exceptions\InvalidScopeException;
+use Dozen\Listify\Exceptions\InvalidQueryBuilderException;
 
 /**
  * Gives some nice sorting features to a model.
@@ -13,7 +13,7 @@ use Lookitsatravis\Listify\Exceptions\InvalidQueryBuilderException;
  *
  * Ported from https://github.com/swanandp/acts_as_list
  *
- * @package lookitsatravis/listify
+ * @package Dozen/listify
  * @version 1.2.2
  * @author Travis Vignon <travis@lookitsatravis.com>
  * @link
