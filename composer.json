@@ -1,13 +1,24 @@
 {
     "name": "lookitsatravis/listify",
     "description": "Turn any Eloquent model into a list! https://github.com/Dozen-Software/listify",
-    "keywords": ["laravel", "model", "position", "acts_as_list", "rails", "list", "eloquent", "order"],
+    "keywords": [
+        "laravel",
+        "model",
+        "position",
+        "acts_as_list",
+        "rails",
+        "list",
+        "eloquent",
+        "order"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Travis Vignon",
-        "email": "travis@lookitsatravis.com",
-        "homepage": "http://lookitsatravis.com"
-    }],
+    "authors": [
+        {
+            "name": "Travis Vignon",
+            "email": "travis@lookitsatravis.com",
+            "homepage": "http://lookitsatravis.com"
+        }
+    ],
     "require": {
         "php": ">=8.0.2",
         "illuminate/database": "~5.5|~6.0|~7.0|~8.0|~9.0",
@@ -20,22 +31,14 @@
         "php-coveralls/php-coveralls": "^2.5"
     },
     "autoload": {
-        "psr-4": {
-            "lookitsatravis\\Listify\\": "src/"
+        "psr-0": {
+            "Lookitsatravis\\Listify\\": "src/"
         }
     },
     "autoload-dev": {
-        "classmap": ["tests/models"]
+        "classmap": [
+            "tests/models"
+        ]
     },
-    "minimum-stability": "dev",
-    "config": {
-        "discard-changes": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Lookitsatravis\\Listify\\ListifyServiceProvider"
-            ]
-        }
-    }
+    "minimum-stability": "dev"
 }
