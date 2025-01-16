@@ -1,41 +1,54 @@
 {
-    "name": "lookitsatravis/listify",
-    "description": "Turn any Eloquent model into a list! http://lookitsatravis.github.io/listify",
-    "keywords": ["laravel", "model", "position", "acts_as_list", "rails", "list", "eloquent", "order"],
-    "license": "MIT",
-    "authors": [{
-        "name": "Travis Vignon",
-        "email": "travis@lookitsatravis.com",
-        "homepage": "http://lookitsatravis.com"
-    }],
-    "require": {
-        "php": ">=8.0.2",
-        "illuminate/database": "~5.5|~6.0|~7.0|~8.0|~9.0",
-        "illuminate/support": "~5.5|~6.0|~7.0|~8.0|~9.0",
-        "illuminate/console": "~5.5|~6.0|~7.0|~8.0|~9.0",
-        "illuminate/events": "~5.5|~6.0|~7.0|~8.0|~9.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~9.5",
-        "php-coveralls/php-coveralls": "^2.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "Lookitsatravis\\Listify\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "classmap": ["tests/models"]
-    },
-    "minimum-stability": "dev",
-    "config": {
-        "discard-changes": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Lookitsatravis\\Listify\\ListifyServiceProvider"
-            ]
-        }
+  "name": "lookitsatravis/listify",
+  "description": "Turn any Eloquent model into a list! http://lookitsatravis.github.io/listify",
+  "keywords": [
+    "laravel",
+    "model",
+    "position",
+    "acts_as_list",
+    "rails",
+    "list",
+    "eloquent",
+    "order"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Travis Vignon",
+      "email": "travis@lookitsatravis.com",
+      "homepage": "http://lookitsatravis.com"
     }
+  ],
+  "require": {
+    "php": ">=8.0.2",
+    "illuminate/database": "~5.5|~6.0|~7.0|~8.0|~9.0|~10.0|~11.0",
+    "illuminate/support": "~5.5|~6.0|~7.0|~8.0|~9.0|~10.0|~11.0",
+    "illuminate/console": "~5.5|~6.0|~7.0|~8.0|~9.0|~10.0|~11.0",
+    "illuminate/events": "~5.5|~6.0|~7.0|~8.0|~9.0|~10.0|~11.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0",
+    "php-coveralls/php-coveralls": "^2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lookitsatravis\\Listify\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/models"
+    ]
+  },
+  "minimum-stability": "dev",
+  "config": {
+    "discard-changes": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Lookitsatravis\\Listify\\ListifyServiceProvider"
+      ]
+    }
+  }
 }
